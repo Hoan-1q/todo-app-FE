@@ -82,8 +82,8 @@ const AddTask: React.FC = () => {
 									initialValue='normal'
 								>
 									<Select defaultValue="normal" style={{ width: '100%' }} >
-										{PriorityArr.map((priority) => (
-											<Option value={priority} >
+										{PriorityArr.map((priority, index) => (
+											<Option value={priority} key={index} >
 												{priority}
 											</Option>
 										))}

@@ -104,8 +104,8 @@ const TodoItem: React.FC<TProps> = ({ data, toggleDone, onRemove }) => {
 										initialValue={priority}
 									>
 										<Select style={{ width: '100%' }} >
-											{PriorityArr.map((priority) => (
-												<Option value={priority} >
+											{PriorityArr.map((priority, index) => (
+												<Option value={priority} key={index} >
 													{priority}
 												</Option>
 											))}
